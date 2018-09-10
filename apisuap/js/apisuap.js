@@ -19,7 +19,7 @@ $("#botao-login").click(function(e){
         contentType: 'application/json',
         success: function (data) {
             sessionStorage.setItem("token", data.token);
-			window.location.href="index.html";
+			window.location.href="dados.html";
         },
         error: function(data){
             alert("Impossível recuperar dados");
